@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+:root {
+    /* Colors */
+    
+        /* Primary */
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+    
+        /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-dark: hsl(234, 17%, 12%);
+    --background: #231D2B;
+    
+}
+
+.positions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;  
+}
+
+body {
+    Font-size: 14px;
+    background: var(--background);
+    background-image: url('./images/bg-stars.svg');
+}
+
+.bg-hills {
+    flex-direction: column;
+    background-image: url('./images/pattern-hills.svg');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 999;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 0.2rem;
+    text-align: center; 
+    position: fixed;
+    top: 175px;
+    color: #FFF;
+}
+
+.time-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-timer {
+    text-align: center;
+    margin-right: 15px;
+}
+
+.card-timer:last-child {
+    margin-right: 0px;
+}
+
+.card div { 
+    width: 125px;
+    height: 125px;
+/*     width: auto;
+    height: auto;
+    padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: var(--Soft-red);
+    font-size: 4.5rem;
+    font-weight: 500;
+
+    border: 1px solid var(--Very-dark-gray);   
+    border-radius: 6px;
+    background: linear-gradient(to bottom, hsl(235, 16%, 14%), hsl(236, 21%, 26%) 51% 100%);
+}
+
+.card-timer small {
+    color: var( --Grayish-blue);
+    letter-spacing: 0.4em;
+    font-weight: 500;
+}
+
+
+.social-media {
+    margin-bottom: 20px
+}
+.social-media a {
+    width: 50px;
+    padding: 25px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.social-media i {
+    color: var(--Grayish-blue);
+    font-size: 1.85rem;
+    transition: all ease-in-out 0.15s;
+}
+
+.social-media i:hover {
+    /* color:hsl(240, 9%, 86%); */
+    color: var(--Soft-red);
+}
+
+.attribution { 
+    position: fixed;
+    bottom: 65px;
+
+    font-size: 15px; 
+    text-align: center; 
+    color: #FFF;
+}
+.attribution a { 
+    color: hsl(228, 81%, 68%); 
+    text-decoration: none;
+}
+
+
+@media(max-width: 580px) {
+    .card div {
+        font-size: 4rem;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .card div {
+        font-size: 3.5rem;
+        width: auto;
+        height: auto;
+    }
+    .card-timer small {
+        letter-spacing: 0.2rem;
+    }
+
+    .attribution {
+        bottom: 30px;
+    }
+
+    .attribution p{
+        display: grid;
+    } 
+
+    .attribution span {
+        margin-top: 5px;
+    }
+}

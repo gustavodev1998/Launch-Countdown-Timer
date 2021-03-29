@@ -1,7 +1,7 @@
 # Launch-Countdown-Timer
 
 <h1 align="center">
-  <img alt="Timer" title="Timer" src="https://github.com/gustavodev1998/Launch-Countdown-Timer/blob/main/images/project.png" width="620px" />
+  <img alt="Timer" title="Timer" src="https://github.com/gustavodev1998/Launch-Countdown-Timer/blob/main/images/project.png" width="820px" />
 </h1>
 
 <br>
